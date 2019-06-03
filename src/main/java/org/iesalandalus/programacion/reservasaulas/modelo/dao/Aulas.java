@@ -80,6 +80,7 @@ public class Aulas {
         if(!this.coleccionAulas.remove(aula)){
             throw new OperationNotSupportedException("El aula a borrar no existe.");
         }
+        this.coleccionAulas.remove(aula);
     }
     
     public List<String> representar(){
